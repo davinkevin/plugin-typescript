@@ -1,4 +1,9 @@
-/// <reference path="./example-types.d.ts" />
+
+declare module example {
+	interface IExampleService {
+		greet(name: string): string;
+	}
+}
 
 declare module "angular" {
    export function module(name: string, deps: Array<string>);

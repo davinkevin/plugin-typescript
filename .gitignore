@@ -1,3 +1,6 @@
+/.idea
+/example/angular/jspm_packages
+/example/angular/node_modules
 *.log
 node_modules/
 jspm_packages/

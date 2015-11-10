@@ -1,11 +1,11 @@
 System.config({
   baseURL: ".",
   defaultJSExtensions: true,
-  transpiler: false,
+  transpiler: "traceur",
   typescriptOptions: {
-    "noImplicitAny": false,
-    "typeCheck": true,
-    "tsconfig": "src/another-tsconfig.json"
+	  "noImplicitAny": false,
+	  "typeCheck": true,
+	  "tsconfig": "tsconfig.json"
   },
   paths: {
     "github:*": "jspm_packages/github/*",
@@ -25,6 +25,9 @@ System.config({
         },
         "*.css": {
           "loader": "css"
+        },
+        "*.html": {
+          "loader": "text"
         }
       }
     }
@@ -34,6 +37,9 @@ System.config({
     "angular": "github:angular/bower-angular@1.4.7",
     "clean-css": "npm:clean-css@3.4.6",
     "css": "github:systemjs/plugin-css@0.1.19",
+    "text": "github:systemjs/plugin-text@0.0.3",
+    "traceur": "github:jmcriffey/bower-traceur@0.0.92",
+    "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.92",
     "ts": "github:frankwallis/plugin-typescript@2.2.0",
     "github:frankwallis/plugin-typescript@2.2.0": {
       "typescript": "npm:typescript@1.6.2"
